@@ -48,3 +48,5 @@ switch(number){
         break;
 
 }
+//you can use switch without break as it is not compulsory but not using it can completely change the output of the number
+//look into code.html
