@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minimum value</title>
+    <script>
+        function min(arr){
+            var minvalue=Infinity;
+        for(var i=0;i<arr.length;i++){
+            if(arr[i]<minvalue){
+                minvalue=arr[i];
+                var flag=1;
+            }
+            else{
+                flag=0;
+            }
+        }
+        if(flag=1){
+            document.write(minvalue+"is the smallest number");
+        }
+        if(flag=0){
+            document.write(Infinity+"is the smallest number");
+        }
+        }
+        var arr=[4,5,2,-1];
+        min(arr);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
