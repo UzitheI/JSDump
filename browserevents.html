@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-events</title>
+    <script>
+        //event or a signal that the element has been touched
+        //one of such events is click
+        
+
+        
+    </script>
+    <style>
+#btn{
+    padding: 10px;
+    background-color: red;
+    border: 2px solid black;
+    color: white;
+    font: bold;
+    border-radius: 3em;
+    cursor: pointer;
+}
+    </style>
+</head>
+<body>
+  <!-- Browser events:
+    call listener list======
+
+
+    click
+    contextmenu right click garda event fire
+    mouse over
+    mouse out 
+    mouse down mouse clicked
+    /mouse up mouse unclicked
+
+    submit
+    focus   input tag ma focus
+    DOMContentLoaded 
+    transitionend  -->
+
+    <div class="container">
+        <h1>heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempora impedit incidunt natus quasi alias officia dolore error quod eos blanditiis qui, nam, vitae architecto praesentium esse omnis pariatur eum magnam sint adipisci necessitatibus! Explicabo beatae dicta cupiditate. Magnam minus dicta architecto esse nam delectus dignissimos rem! Eaque, hic eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et minima iusto, deserunt in nulla qui nemo libero iure incidunt cumque eius consectetur optio quaerat doloremque ut voluptates nostrum mollitia sunt, dolores impedit. Tempora obcaecati totam autem saepe et quidem harum, possimus nostrum, molestiae officia repudiandae aut ratione. Assumenda tenetur tempora laboriosam facilis accusamus incidunt placeat sint eveniet veritatis, at neque. Qui assumenda velit impedit ratione repudiandae quo eius dolor sit, in placeat sequi eaque. Libero excepturi corrupti hic earum pariatur. Dolore laudantium reiciendis ullam nemo eaque quas labore! Rerum est vel expedita corrupti laboriosam. Magnam id officiis quas saepe earum. Doloribus non, eligendi aliquid rem totam error, veniam, sunt sint nemo odit commodi maxime! Error veritatis magnam suscipit eveniet dolor ab dolorem odio delectus quibusdam sapiente reprehenderit, assumenda laudantium! Dolorem magnam voluptate hic quasi, harum corrupti cumque exercitationem distinctio, expedita ut eum totam aliquid nostrum quis sint alias. Error temporibus debitis molestiae magni corrupti. Fuga, explicabo modi? Corrupti dolores incidunt laborum, magni explicabo aperiam at placeat impedit enim neque reprehenderit id vero sint obcaecati quas alias eius quibusdam adipisci odit quisquam facere. Sunt, dignissimos eligendi aperiam dicta officia inventore non omnis quod error, accusantium optio voluptatem quisquam distinctio dolorum, porro suscipit minima? Quae ullam inventore tempore at. Asperiores accusamus necessitatibus modi vitae deleniti, maiores doloribus nemo magni sed enim quaerat minus. Nihil facere eligendi odio illo? Beatae dolores aliquam maiores.
+        </p>
+    </div>
+    <button id="btn" onclick="togglehide()">show/hide</button>
+<script>
+    let para=document.getElementById('para');
+    para.addEventListener('mouseover',function run(){
+        console.log("mouse inside")
+    }
+    );
+    para.addEventListener('mouseout',function notrun(){console.log("mouse outside")});
+    //here the common syntax should be on____="function()";
+    function togglehide(){
+        let btn=document.getElementById('btn');
+        let para=document.getElementById('para');
+        if(para.style.display != 'none'){
+            para.style.display='none';
+            
+        }
+        else{
+            para.style.display='block';
+        }
+    }
+    //also when we use para.style.display, it is already pointing towards the para id that has been declared inside the html content, so you dont need 
+    // let par=document.getElementById="par";
+</script>
+
+
+</body> -
+</html>

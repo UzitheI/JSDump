@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulating dom</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>about us</li>
+            <li>services</li>
+            <li>more about us</li>
+            <li>contact us</li>
+        </ul>
+    </div>
+    <div class="container">
+        <p>another container</p>
+    </div>
+    <script>
+        let main=document.getElementById('main');
+        console.log(main);
+        //accessing in console
+        //accessing elements and navigating dom
+        var nav=document.getElementById('nav');
+        console.log(nav);
+        // HELPS TO LOG THE REQUIRED ID IN THE CONSOLE 
+        // nav.innerHTML;
+
+
+
+        //writes the content of the id in string form 
+        //we can also select a single data here by using
+        // nav.innerHTML="<li>Dynamic Element</li>"
+
+
+
+        //grabbing element through class
+        // let container=Document.getElementsByClassName('container');
+        // console.log(container);
+//using csss selector 
+
+// let sel=document.querySelector("#nav>li");
+// //this variable points where to select 
+// console.log("Selector returns",sel);
+// this logs the variable
+
+
+//using css selectors to return javascript content
+
+let sel=document.querySelectorAll("#nav>li");
+console.log("Selector returns",sel)
+//it is selecting everything
+
+
+    </script>
+</body>
+</html>
